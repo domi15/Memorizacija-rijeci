@@ -1,0 +1,33 @@
+body {
+    background-image: linear-gradient(180deg, rgb(0, 174, 255), rgb(0, 26, 255));
+}
+
+
+.myButton {
+	box-shadow: 3px 4px 0px 0px #072b52;
+	background:linear-gradient(to bottom, rgb(0, 174, 255) 5%, rgb(0, 26, 255) 100%);
+	background-color:#007cff;
+	border-radius:18px;
+	border:1px solid #ffffff;
+	display: inline;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	padding:5px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #014149;
+    margin: auto;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #37dcf2 5%, #115963 100%);
+	background-color:#37dcf2;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.Button {
+    text-align: center;
+}
