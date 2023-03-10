@@ -31,3 +31,8 @@ function vidjeno() {
   a = lista[Math.floor(Math.random() * lista.length)];
   document.getElementById("rijec").innerHTML = a;
 }
+
+function DarkMode() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}

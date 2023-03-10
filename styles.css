@@ -31,3 +31,9 @@ body {
 .Button {
     text-align: center;
 }
+
+.dark-mode {
+    color: white;
+    background-color: #3d3d3d !important;
+
+}
