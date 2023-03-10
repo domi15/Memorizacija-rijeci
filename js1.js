@@ -2,35 +2,32 @@ const lista = ["balon", "škola", "crvenilo", "sladoled", "krov", "izvanzemaljac
 
 const li = [];
 let br = 0;
-let a;
+let a = lista[Math.floor(Math.random() * lista.length)];
 
-function getRandomWord() {
-  let k;
-  do {
-    k = Math.floor(Math.random() * lista.length);
-    a = lista[k];
-  } while (li.includes(a));
-  return a;
-}
-
-document.getElementById("rijec").innerHTML = getRandomWord();
+document.getElementById("rijec").innerHTML = a;
 
 function novo() {
-  if (li.includes(a)) {
-    document.getElementById("rijec").innerHTML = "Game Over";
-  } else {
+  if (!li.includes(a)) {
     li.push(a);
     br++;
-    document.getElementById("rijec").innerHTML = getRandomWord();
+  } else {
+    document.getElementById("rijec").innerHTML = "Game Over" + br;
+    return;
   }
+  
+  a = lista[Math.floor(Math.random() * lista.length)];
+  document.getElementById("rijec").innerHTML = a;
 }
 
 function vidjeno() {
   if (li.includes(a)) {
-    document.getElementById("rijec").innerHTML = "Game Over " + br;
-  } else {
     li.push(a);
     br++;
-    document.getElementById("rijec").innerHTML = getRandomWord();
+  } else {
+    document.getElementById("rijec").innerHTML = "Game Over " + br;
+    return;
   }
+  
+  a = lista[Math.floor(Math.random() * lista.length)];
+  document.getElementById("rijec").innerHTML = a;
 }
