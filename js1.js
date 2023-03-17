@@ -3,8 +3,15 @@ const lista = ["balon", "škola", "crvenilo", "sladoled", "krov", "izvanzemaljac
 const li = [];
 let br = 0;
 let a = lista[Math.floor(Math.random() * lista.length)];
+var highscore = document.cookie;
 
 document.getElementById("rijec").innerHTML = a;
+
+document.getElementById('highscore').innerHTML = highscore
+
+if (br > highscore){
+  document.cookie = br;
+}
 
 function novo() {
   if (!li.includes(a)) {
