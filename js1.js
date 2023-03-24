@@ -40,14 +40,25 @@ function vidjeno() {
 }
 
 function DarkMode() {
-  document.body.style.backgroundColor = "black";
-  //element.classList.replace(white,Dark-Mode);
-  var element = document.body;
-  element.classList.toggle("dark-mode");
+  try {
+  var white = document.querySelector('.white');
+  var className = white.className;
+  }catch(e){
+    
+  }
+  if (className == 'white'){
+    document.getElementById("body").classList.remove('white');
+    document.getElementById("body").classList.add('Dark-mode');
+  }
+  else {
+    document.getElementById("body").classList.remove('Dark-mode');
+    document.getElementById("body").classList.add('white');
+  }
 }
 
 function restart() {
   br = 0
+  li.length = 0
   a = lista[Math.floor(Math.random() * lista.length)];
   document.getElementById("rijec").innerHTML = a;
 }
