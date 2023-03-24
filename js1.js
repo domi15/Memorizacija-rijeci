@@ -49,10 +49,12 @@ function DarkMode() {
   if (className == 'white'){
     document.getElementById("body").classList.remove('white');
     document.getElementById("body").classList.add('Dark-mode');
+    document.getElementById("github-logo").src = "github_logo_dark.png";
   }
   else {
     document.getElementById("body").classList.remove('Dark-mode');
     document.getElementById("body").classList.add('white');
+    document.getElementById("github-logo").src = "github_logo.png";
   }
 }
 
@@ -62,5 +64,3 @@ function restart() {
   a = lista[Math.floor(Math.random() * lista.length)];
   document.getElementById("rijec").innerHTML = a;
 }
-
-//fix
