@@ -1,4 +1,4 @@
-body {
+.white {
     background-image: linear-gradient(180deg, rgb(0, 174, 255), rgb(0, 26, 255));
 
 }
@@ -14,7 +14,7 @@ body {
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Arial;
-	font-size:16px;
+	font-size: 1.25vw;
 	padding:5px 24px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #014149;
@@ -35,6 +35,6 @@ body {
 
 .dark-mode {
     color: white;
-    background-color: #3d3d3d !important;
+    background-color: #000000 !important;
 
 }

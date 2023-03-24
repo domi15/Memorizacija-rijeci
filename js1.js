@@ -18,7 +18,7 @@ function novo() {
     li.push(a);
     br++;
   } else {
-    document.getElementById("rijec").innerHTML = "Game Over" + br;
+    document.getElementById("rijec").innerHTML = "Igra svršena ඞ " + br;
     return;
   }
   
@@ -31,7 +31,7 @@ function vidjeno() {
     li.push(a);
     br++;
   } else {
-    document.getElementById("rijec").innerHTML = "Game Over " + br;
+    document.getElementById("rijec").innerHTML = "Igra svršena ඞ " + br;
     return;
   }
   
@@ -40,6 +40,13 @@ function vidjeno() {
 }
 
 function DarkMode() {
+  element.classList.replace(white,Dark-Mode);
   var element = document.body;
   element.classList.toggle("dark-mode");
+}
+
+function restart() {
+  br = 0
+  a = lista[Math.floor(Math.random() * lista.length)];
+  document.getElementById("rijec").innerHTML = a;
 }

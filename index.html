@@ -6,7 +6,7 @@
         <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
+    <body id="body" class="white">
         <div>  
             <div style="text-align: right;">
                 <img src="moon.jpg" alt="darkmode-indevelopment" onclick="DarkMode()" style="text-align: right; cursor: pointer;"></img>
@@ -19,6 +19,10 @@
         <div class="Button">
             <button class="myButton" onclick="novo()">Novo</button>
             <button class="myButton" onclick="vidjeno()">Vidjeno</button>
+        </div>
+        <p></p>
+        <div style="text-align: center">
+            <button class="myButton" onclick="restart()">Restart</button>
         </div>
         <p id="highscore" style="text-align: center;">123</p>
         <script src="js1.js"></script>
