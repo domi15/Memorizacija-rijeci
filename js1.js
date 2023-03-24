@@ -40,7 +40,7 @@ function vidjeno() {
 }
 
 function DarkMode() {
-  element.classList.replace(white,Dark-Mode);
+  document.body.style.backgroundColor = "black"; element.classList.replace(white,Dark-Mode);
   var element = document.body;
   element.classList.toggle("dark-mode");
 }
