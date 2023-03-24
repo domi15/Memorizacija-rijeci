@@ -44,7 +44,7 @@ function DarkMode() {
   var white = document.querySelector('.white');
   var className = white.className;
   }catch(e){
-    
+
   }
   if (className == 'white'){
     document.getElementById("body").classList.remove('white');
@@ -62,3 +62,5 @@ function restart() {
   a = lista[Math.floor(Math.random() * lista.length)];
   document.getElementById("rijec").innerHTML = a;
 }
+
+//fix
